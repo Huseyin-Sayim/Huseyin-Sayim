@@ -1,0 +1,69 @@
+
+#yazarlar-baslik {
+    text-align: center;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#yazarlar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 85%;
+    margin: 20px auto;
+}
+
+#yazarlar .yazar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#yazarlar h5 {
+    text-align: center;
+    font-size: 17px;
+}
+
+#yazarlar img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s;
+}
+
+#yazarlar img:hover {
+    transform: scale(0.96);
+}
+
+/*! Responsive */
+
+@media screen and (max-width:1030px) {
+    #yazarlar{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    #yazarlar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #yazarlar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #yazarlar-baslik {
+        font-size: 23       px;
+    }
+}

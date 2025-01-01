@@ -1,0 +1,16 @@
+.blog_image {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.blog_image:hover {
+    transform: scale(0.99);
+}
+
+.blog_image:active {
+    transform: scale(0.95);
+}
+
+.ck-editor.ck-reset.ck-rounded-corners {
+    width: 100%;
+}

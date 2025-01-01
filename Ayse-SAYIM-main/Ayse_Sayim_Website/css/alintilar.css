@@ -1,0 +1,51 @@
+/*! Search form style */
+body {
+    height: 100%;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px groove black;
+    width: 85%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+
+#search-form .input-group {
+    width: 80%;
+    margin-top: 40px;
+}
+
+
+#alintilar {
+   padding: 10px;
+   min-height: 65vh;
+}
+
+#alintilar a {
+    text-decoration: none;
+    color: black;
+    transition: .15s;
+}
+
+#alintilar a:hover {
+    color: blueviolet;
+}
+
+#alintilar h6 {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#alintilar span {
+    padding: 5px;
+}
+
+#alintilar img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}

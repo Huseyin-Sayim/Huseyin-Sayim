@@ -1,0 +1,29 @@
+/*! Footer Style */
+
+#footer {
+    background-color: #e6c9ab;
+    padding: 10px !important;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thanks {
+    font-size: 13px;
+    margin: 5px;
+    text-align: center;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+#footer .bilgilendirme {
+    margin: 5px !important;
+    font-size: 13px;
+}
+
+#footer .bilgilendirme p {
+    text-align: center;
+}

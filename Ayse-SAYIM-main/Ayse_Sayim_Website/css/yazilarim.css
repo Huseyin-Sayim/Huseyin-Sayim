@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: visible;
+}
+
+#yazilarim {
+    min-height: 75vh;
+}
+
+#yazilarim .card {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+    width: 85%;
+    margin: 40px auto;
+    /* padding: 20px 0;  */
+    box-shadow: 1px 2px 10px #cdc2c2;
+}
+
+#yazilarim .text p a {
+    text-decoration: none;
+}
+
+#yazilarim .text p a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#yazilarim h5 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#yazilarim .text p {
+    margin: 10px 20px;
+}
+
+#yazilarim .text span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    float: right;
+    margin-right: 35px;
+}

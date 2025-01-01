@@ -1,0 +1,148 @@
+/*! Form Style */
+
+#filters {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #e5a96a;
+    padding: 30px;
+}
+
+#filters #form-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*! Book List Style */
+
+#all-books {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#all-books .book {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#all-books .book .kitap_adi a {
+    text-decoration: none;
+    color: black;
+}
+
+#all-books .book .kitap_adi a:hover {
+    color: #4444ce;
+    font-style: italic;
+}
+
+#all-books .book img {
+    height: 278px;
+    width: 200px;
+    object-fit: fill;
+}
+
+#all-books .book span.okudum {
+    background-color: #32cd32;
+}
+
+#all-books .book span.okuyacagim {
+    background-color: #f28500;
+}
+
+#all-books .book img:hover {
+    transition: .3s;
+    transform: scale(0.95);
+}
+
+#all-books .book h4,p {
+    margin: 10px 0;
+}
+
+/*! Book Page Filter Style */
+
+#book-page {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;    
+    border-bottom: 1px solid black;
+}
+
+#book-page #book-page-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#book-page #book-page-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    transition: .3s;
+}
+
+#book-page #book-page-list a.active {
+    color: #4444ce;
+}
+
+
+/*! Responsive */
+
+@media screen and (max-width:1200px) {
+    #all-books {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    /*! Form Responsive */
+
+   #filters #form-filter {
+        display: block;
+   }
+
+    /*! Book List Responsive */
+
+    #all-books {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    #all-books {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #book-page #book-page-list a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        width: 100%;
+        transition: .3s;
+        margin: 0 15px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #all-books {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
